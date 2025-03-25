@@ -40,11 +40,16 @@ nav a:hover {
 }
 
 .theme-toggle {
-  padding: 10px;
+  padding: 10px 20px;
   background: #007acc;
-  color: #ffffff;
+  color: #fff;
   border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
 
@@ -57,7 +62,8 @@ footer,
 }
 
 .theme-toggle:hover {
-  background-color: #005f99;
+  background: #005f99;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 section {
@@ -168,16 +174,15 @@ body.dark section {
 }
 
 body.dark .theme-toggle {
-  background-color: #333;
-  color: #f0f0f0;
+  background: #800020;
+  color: #fff;
   border: none;
-  outline: none;
-  box-shadow: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 body.dark .theme-toggle:hover {
-  background-color: #444;
-  color: #ffffff;
+  background: #800020;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
   border: 1px solid #800020;
 }
 
