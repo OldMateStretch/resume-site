@@ -6,10 +6,11 @@
   <title>Cameron's Resume</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body id="site-body">
   <header>
     <h1>Cameron</h1>
     <p>Web Developer | Problem Solver | Fast Learner</p>
+    <button class="theme-toggle">Toggle Theme</button>
   </header>
 
   <nav>
@@ -61,5 +62,12 @@
   <footer>
     <p>© 2025 Cameron. All rights reserved.</p>
   </footer>
+  <script>
+    const toggleButton = document.querySelector(".theme-toggle");
+    const body = document.getElementById("site-body");
+    toggleButton.addEventListener("click", () => {
+      body.classList.toggle("dark");
+    });
+  </script>
 </body>
 </html>
