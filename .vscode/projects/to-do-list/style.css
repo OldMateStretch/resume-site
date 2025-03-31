@@ -251,3 +251,53 @@ h1 {
   border: none;
   cursor: pointer;
 }
+
+body.dark {
+  background-color: #111;
+  color: #e0e0e0;
+}
+
+body.dark .main-wrapper {
+  background-color: #1e1e1e;
+  box-shadow: none;
+}
+
+body.dark h1 {
+  color: #e0e0e0;
+}
+
+body.dark #new-task,
+body.dark #task-list li {
+  background-color: #222;
+  color: #e0e0e0;
+  border: none;
+}
+
+body.dark #task-list li.completed {
+  color: #999;
+  opacity: 0.7;
+}
+
+body.dark #add-task {
+  background-color: #800020;
+}
+
+body.dark #clear-tasks {
+  background-color: #800020;
+}
+
+#theme-toggle {
+  margin: 20px auto;
+  display: block;
+  padding: 8px 16px;
+  background-color: #222;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark #theme-toggle {
+  background-color: #800020;
+  color: #ffffff;
+}
