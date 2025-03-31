@@ -5,36 +5,35 @@
     margin-top: 50px;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 #new-task {
-    width: 75%;
+    width: 100%;
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-bottom: 10px;
     transition: border-color 0.4s ease;
 }
 
 #add-task {
-    padding-top: 10px;
-    padding-bottom: 10px; 
-    padding-left: 16px;
-    padding-right: 16px; 
+    padding: 10px 16px;
     background-color: black;
     border: 1px solid black;
     color: white;
     cursor: pointer;
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 #task-list {
     list-style-type: none;
     padding: none;
     margin: none;
-    margin-top: auto;
+    width: 100%;
 }
-
 
 .completed {
     text-decoration: line-through;
@@ -87,40 +86,30 @@ li.remove {
     }
 }
 
-.completed {
-    text-decoration: line-through;
-    opacity: 0.6;
-}
-
 .input-error {
     border: 2px solid red;
     animation: shake 0.3s ease;
-  }
-  
-  @keyframes shake {
+}
+
+@keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
     50% { transform: translateX(5px); }
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     #todo-container {
         flex-direction: column;
         align-items: stretch;
     }
-    
-    #new-task {
+
+    #new-task, #add-task {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 10px;
     }
-    
-    #add-task {
-        width: 100%;
-    }
-    
+
     li {
         flex-direction: column;
         align-items: flex-start;
@@ -129,21 +118,22 @@ li.remove {
     .delete-btn {
         align-self: flex-end;
         margin-top: 5px;
-    }}
-
-    #clear-tasks {
-        margin-top: 20px;
-        padding: 10px;
-        background-color: crimson;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 100%;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
     }
+}
 
-    #clear-tasks:hover {
-        background-color: darkred;
-    }
+#clear-tasks {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#clear-tasks:hover {
+    background-color: darkred;
+}
